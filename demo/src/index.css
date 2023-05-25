@@ -20,3 +20,35 @@ nav {
 	min-height: calc(100vh - 70px - 64px);
 	padding: 1.5rem 0;
 }
+
+.list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 1rem;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+}
+
+.card-content {
+	flex-grow: 1;
+}
+
+img,
+iframe {
+	max-width: 100%;
+}
+
+iframe {
+	width: 600px;
+	height: 350px;
+}
+
+.table-ingredients {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 60px;
+	padding-bottom: 50px;
+}
